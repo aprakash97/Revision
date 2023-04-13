@@ -1,17 +1,16 @@
 import { useState } from "react";
 
 const SearchParams = () => {
-  // const [location, setLocation] = useState("sdfs");
-  const [count, setCount] = useState(0);
-
-  function handleClick(event) {
-    event.preventDefault();
-    setCount(count + 1);
-  }
-
+  const [location, setLocation] = useState("");
+  // const [count, setCount] = useState(0);
+  // const location = "Colombo";
+  // function handleClick(event) {
+  //   event.preventDefault();
+  //   setCount(count + 1);
+  // }
   return (
     <div className="searchParams">
-      {/* <form>
+      <form>
         <label htmlFor="location">
           Location
           <input
@@ -22,12 +21,6 @@ const SearchParams = () => {
           />
         </label>
         <button>Submit</button>
-      </form> */}
-      <form onSubmit={handleClick}>
-        {/* <p> {count} </p>
-        <button onClick={handleClick}>Update</button> */}
-        <p>You clicked {count} times</p>
-        <button>Click me</button>
       </form>
     </div>
   );
